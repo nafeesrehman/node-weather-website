@@ -9,7 +9,7 @@ const forecast = (lon, lat, callback) => {
         } else if(body.cod === '400') {
             callback('Unable to find location. Try another search', undefined)
         } else {
-            callback(undefined, body.weather[0].description + ' It is currently ' + body.main.temp + ' degress out. There is a ' + body.weather[0].main + '% chance of rain.')
+            callback(undefined, body.weather[0].description + ' It is currently ' + body.main.temp + ' degress out. There is a ' + body.weather[0].main + '% chance of rain. This is the updated Text')
            // console.log(response.body.weather[0].description + ' It is currently ' + response.body.main.temp + ' degress out. There is a ' + response.body.weather[0].main + '% chance of rain.')	
         }
     })
